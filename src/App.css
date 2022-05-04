@@ -1,41 +1,41 @@
 header {
-  display: flex;
   align-items: center;
-  justify-content: space-between;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .theme__container {
-  display: flex;
   align-items: center;
   cursor: pointer;
+  display: flex;
 }
 
-.toggleContainer {
+.toggle__container {
   background-color: var(--color-bg-app);
-  width: 35px;
-  height: 1.1rem;
   border-radius: 20px;
+  height: 1.1rem;
   transition: all 0.6s ease;
+  width: 35px;
 }
 
-.toggleBall {
+.toggle__ball {
+  background-color: var(--color-text);
+  border-radius: 100%;
+  height: 14.2px;
   position: relative;
   top: 1.7px;
-  background-color: var(--color-text);
-  width: 14px;
-  height: 14.2px;
-  border-radius: 100%;
   transition: all 0.3s ease;
+  width: 14px;
 }
 
 .image {
-  position: absolute;
   background-size: cover;
+  height: 30vh;
+  position: absolute;
+  top: 0;
   width: 100%;
   z-index: -1;
-  top: 0;
-  height: 30vh;
 }
 
 .main__container {
@@ -49,8 +49,8 @@ header {
 
 .mode__icon {
   font-size: 2rem;
-  transition: var(--transition);
   margin-left: 10px;
+  transition: var(--transition);
 }
 
 /* ======================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */

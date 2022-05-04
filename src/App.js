@@ -96,9 +96,12 @@ function App() {
                   handleToggle();
                   themeToggler();
                 }}
-                className="toggleContainer"
+                className="toggle__container"
               >
-                <div style={{ left: `${toggle}` }} className="toggleBall"></div>
+                <div
+                  style={{ left: `${toggle}` }}
+                  className="toggle__ball"
+                ></div>
               </div>
               {themeIcon}
             </div>
