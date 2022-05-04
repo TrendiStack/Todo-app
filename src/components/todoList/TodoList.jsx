@@ -5,7 +5,7 @@ import './TodoList.css';
 
 const TodoList = ({ todos, setTodos, setStatus, filterTodo }) => {
   const deleteHandler = () => {
-    setTodos([]);
+    setTodos(todos.filter(todo => todo.completed !== true));
   };
 
   const statusHandler = e => {
