@@ -1,0 +1,104 @@
+.todo__container {
+  background: var(--color-bg-app);
+  border-radius: 0.3rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  box-shadow: var(--box-shadow-app);
+  color: var(--color-text);
+  margin-top: 2vh;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.todo__options {
+  align-items: center;
+  display: flex;
+  height: 2.5rem;
+  justify-content: space-around;
+}
+
+.todo__state {
+  display: flex;
+}
+
+.todo__state > small {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.todo__state > small:hover {
+  color: #494c6b;
+}
+
+.todo__state :last-child {
+  margin-right: 0;
+}
+
+.clear__btn {
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.clear__btn:hover {
+  color: #494c6b;
+}
+/* ====================================== Todo =================================== */
+
+.todo__item {
+  align-items: center;
+  border-bottom: var(--border-bottom-app);
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  width: 100;
+}
+
+.todo__item div {
+  align-items: center;
+  display: flex;
+}
+
+.circle {
+  border-radius: 100%;
+  border: 1px solid #393a4b;
+  cursor: pointer;
+  height: 20px;
+  margin: 0 10px 0 10px;
+  width: 20px;
+}
+
+.completed {
+  background: linear-gradient(135deg, #55ddff 0%, #c058f3 100%);
+  border-radius: 100%;
+  border: 1px solid #393a4b;
+  height: 20px;
+  margin: 0 10px 0 10px;
+  width: 20px;
+}
+
+.todo__text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.trash__icon {
+  cursor: pointer;
+  margin-right: 0.7rem;
+}
+
+.check {
+  color: white;
+}
+
+/* ======================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@media screen and (max-width: 1024px) {
+}
+
+/* ======================== MEDIA QUERIES (SMALL DEVICES) ===================== */
+@media screen and (max-width: 600px) {
+  .todo__options > small {
+    font-size: 8px;
+  }
+  .todo__state > small {
+    font-size: 10px;
+  }
+}
