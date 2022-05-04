@@ -8,6 +8,7 @@ header {
 .theme__container {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .toggleContainer {
